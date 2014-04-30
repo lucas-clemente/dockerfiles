@@ -1,7 +1,7 @@
 FROM ubuntu:14.04
 MAINTAINER Lucas Clemente <lucas@clemente.io>
 
-RUN apt-get install python-software-properties
+RUN apt-get install -y python-software-properties
 RUN apt-add-repository ppa:brightbox/ruby-ng
 RUN apt-get update
 
