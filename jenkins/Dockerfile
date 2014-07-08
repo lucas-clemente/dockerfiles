@@ -11,7 +11,7 @@ RUN apt-get install -q -y nodejs phantomjs
 RUN apt-get install -q -y cmake flex unzip libboost-dev curl
 
 # Go
-RUN curl http://golang.org/dl/go1.3.linux-amd64.tar.gz | tar -C /usr/local -xzf -
+RUN curl https://storage.googleapis.com/golang/go1.3.linux-amd64.tar.gz | tar -C /usr/local -xzf -
 ENV PATH /usr/local/go/bin:$PATH
 
 # SSH Setup
