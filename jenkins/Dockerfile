@@ -10,6 +10,11 @@ RUN apt-get install -q -y nodejs phantomjs
 # Univedo building stuff
 RUN apt-get install -q -y cmake flex unzip libboost-dev curl
 
+# Go
+RUN curl http://golang.org/dl/go1.3.linux-amd64.tar.gz | tar -C /usr/local -xzf -
+ENV PATH /usr/local/go/bin:$PATH
+
+# SSH Setup
 RUN mkdir -p /root/.ssh && echo "UserKnownHostsFile = /data/known_hosts" > /root/.ssh/config
 
 ADD http://mirrors.jenkins-ci.org/war/1.570/jenkins.war /opt/jenkins.war
