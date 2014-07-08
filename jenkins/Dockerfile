@@ -4,6 +4,9 @@ MAINTAINER Lucas Clemente <lucas@univedo.com>
 # Java
 RUN apt-get install -q -y openjdk-7-jre-headless
 
+# Node
+RUN apt-get install -q -y nodejs
+
 # Univedo building stuff
 RUN apt-get install -q -y cmake flex unzip libboost-dev curl
 
