@@ -5,7 +5,7 @@ MAINTAINER Lucas Clemente <lucas@univedo.com>
 RUN apt-get install -q -y openjdk-7-jre-headless
 
 # Node
-RUN apt-get install -q -y nodejs
+RUN apt-get install -q -y nodejs phantomjs
 
 # Univedo building stuff
 RUN apt-get install -q -y cmake flex unzip libboost-dev curl
