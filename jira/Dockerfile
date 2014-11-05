@@ -1,4 +1,4 @@
-FROM java:8-jre
+FROM java:7-jre
 MAINTAINER lucas@clemente.io
 
 RUN mkdir /jira &&\
