@@ -5,7 +5,7 @@ cat <<END > /jira-home/dbconfig.xml
 <jira-database-config>
   <name>defaultDS</name>
   <delegator-name>default</delegator-name>
-  <database-type>postgresql</database-type>
+  <database-type>postgres72</database-type>
   <schema-name>public</schema-name>
   <jdbc-datasource>
     <url>jdbc:postgresql://$POSTGRESQL_PORT_5432_TCP_ADDR:$POSTGRESQL_PORT_5432_TCP_PORT/$POSTGRESQL_ENV_DB_NAME</url>
