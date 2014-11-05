@@ -22,4 +22,6 @@ cat <<END > /jira-home/dbconfig.xml
 </jira-database-config>
 END
 
+sed -i "s/<Connector /<Connector secure=\"true\" scheme=\"https\" proxyPort=\"443\" proxyName=\"$PROXY_NAME\" /g" /jira/conf/server.xml
+
 exec /jira/bin/start-jira.sh -fg

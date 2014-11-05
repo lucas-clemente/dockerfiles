@@ -11,6 +11,7 @@ RUN mkdir /jira &&\
 ADD launch.sh /launch.sh
 
 ENV JIRA_HOME /jira-home
+ENV PROXY_NAME example.com
 
 # USER jira
 VOLUME /jira-home
