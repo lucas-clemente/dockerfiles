@@ -10,4 +10,5 @@ ENV SLACK_USERNAME ""
 ENV PORT 5000
 
 EXPOSE 5000
-CMD cd /app && npm start
+WORKDIR /app
+CMD ["npm", "start"]
