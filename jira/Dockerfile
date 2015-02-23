@@ -2,7 +2,7 @@ FROM java:7-jre
 MAINTAINER lucas@clemente.io
 
 RUN mkdir /jira &&\
-  curl -L http://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-6.3.11.tar.gz \\
+  curl -L http://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-6.3.15.tar.gz \\
   | tar xz --strip=1 -C /jira
 
 # RUN useradd --create-home --home-dir /jira-home --shell /bin/bash jira &&\
